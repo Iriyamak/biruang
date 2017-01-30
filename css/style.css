@@ -196,20 +196,48 @@ header a{
 		font-size: 0.875em;
 	}
 /*catalog styles*/
-.catalog h1{
-	font-size: 1.4156em;
-	text-transform: uppercase;
-	text-align: center;
-	font-family: 'Roboto Condensed', sans-serif;
+.catalog{
+margin-bottom: 50px;
 }
+	.catalog h1{
+		font-size: 1.4156em;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: 'Roboto Condensed', sans-serif;
+		color: #67686d;
+	}
 	.block-catalog{
 		margin-top: 40px;
 		display: flex;
 		justify-content: space-between;
 	}
-		.catalog-item{
+		.block-catalog article{
 			width: 23%;
 		}
-		.catalog-item img{
+		.block-catalog img{
 			max-width: 100%;
 		}
+		.catalog-content{
+			padding: 20px;
+			border: 1px solid #eee;
+		}
+			.catalog-content h2{
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+			.catalog-content h3{
+				margin: 10px 0;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-style: italic;
+			}
+			.catalog-content p{
+				font-size: 10px;
+			}
+			.price-basket{
+				margin-top: 14px;
+				border-top: 1px solid #eee;
+				display: flex;
+				justify-content: space-between;
+				padding-top: 15px;
+			}
