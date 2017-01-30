@@ -43,43 +43,43 @@ nav ul {
 html {
 	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
 }
-body {
-	color: #7e7f84;
-	text-align: left;
-	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
-	min-height: 100%;
-	font-family: 'Roboto', sans-serif;
-  }
-a, a:visited { /* порядок правил для ссылок имеет значение */
-	color: #7e7f84;
-	text-decoration: none;
-}
-a:hover {
-	color: #f45a40;
-	text-decoration: none;
-}
-a:focus, a:active {
-	color: #f45a40;
-	text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-}
-img {
-	max-width:100%;
-}
-.clr {
-	clear: both;
-}
-.clearfix:after {
-    clear: both;
-    content: "";
-    display: table;
-}
-.center-block-main{
-	max-width: 1170px;
-	margin: 0 auto;
-}
+	body {
+		color: #7e7f84;
+		text-align: left;
+		font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+		min-height: 100%;
+		font-family: 'Roboto', sans-serif;
+	  }
+	a, a:visited { /* порядок правил для ссылок имеет значение */
+		color: #7e7f84;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #f45a40;
+		text-decoration: none;
+	}
+	a:focus, a:active {
+		color: #f45a40;
+		text-decoration: none;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: normal;
+	}
+	img {
+		max-width:100%;
+	}
+	.clr {
+		clear: both;
+	}
+	.clearfix:after {
+	    clear: both;
+	    content: "";
+	    display: table;
+	}
+	.centerfix{
+		max-width: 1170px;
+		margin: 0 auto;
+	}
 /*header styles*/
 header a{
 	text-transform: uppercase;
@@ -87,17 +87,17 @@ header a{
 	.header-top{
 		padding: 33px 0;
 		border-bottom: 1px solid #eee;
+		display:flex;
+		justify-content: space-between;
 	}
 		.logo{
-			float: left;
 			font-size: 1.375em;
 			font-family: 'Roboto Condensed', sans-serif;
 				}
 		.contact-basket{
-			float: right;
+			display: flex;
 		}
 			.contact-basket p{
-				float: left;
 				font-size: 0.75em;
 				font-weight: 600;
 			}
@@ -116,23 +116,19 @@ header a{
 					}
 	.header-bottom{
 		padding: 15px 8px;
+		display: flex;
 	}
 		.menu{
-			float: left;
+			display: flex;
 		}
 			.menu li{
-				float: left;
 				margin-right: 36px;
 				font-size: 0.875em;
 			}
 		.search-block{
-			float: left;
+			display: flex;
 			margin-top: -1px;
 		}
-			.search-block input[type=search],
-			.search-block input[type=image]{
-				float: left;
-			}
 			.search-block input[type=search]{
 				font-size: 0.875em;
 				border: none;
@@ -142,3 +138,78 @@ header a{
 				margin-top: 2px;
 				margin-right: 6px;
 			}
+/*slider styles*/
+.slider{}
+	.slider li{
+		position: relative;
+		color: #f45a40;
+	}
+		.slider h2{
+			position: absolute;
+			top: 220px;
+			left: 40px;
+			font-weight: bold;
+			font-size: 3.706em;
+			text-transform: uppercase;
+			line-height: 1.1;
+		}
+		.slider p{
+			position: absolute;
+			top: 350px;
+			left: 40px;
+			font-size: 0.875em;
+			font-weight: bold;
+		}
+	.unslider-nav{/* кнопки навгации при дефолте видны только в панели разработчика - проявим их явно*/
+		max-width: 1170px; /*ширина макета*/
+		margin: 0 auto;
+		position: relative;
+		top: -40px;
+	}
+/*news-block styles*/
+.block-news{
+	display: flex;
+	justify-content: space-between;
+}
+	.block-news article{
+		width: 31.6%;
+		margin: 50px 0 60px 0;
+	}
+	.block-news img{
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.block-news h2{
+		font-size: 1.375em;
+		font-family: 'Roboto Condensed', sans-serif;
+		margin: 25px 0;
+	}
+		.block-news h2 a{
+			text-transform: uppercase;
+			color: #f45a40;
+		}
+			.block-news h2 a:hover{
+				text-decoration: underline;
+			}
+	.block-news p{
+		font-size: 0.875em;
+	}
+/*catalog styles*/
+.catalog h1{
+	font-size: 1.4156em;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+	.block-catalog{
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+	}
+		.catalog-item{
+			width: 23%;
+		}
+		.catalog-item img{
+			max-width: 100%;
+		}
