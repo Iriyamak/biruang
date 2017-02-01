@@ -27,7 +27,7 @@ input, select, button, textarea {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display:block;
 }
-ul {
+nav ul {
 	 list-style:none;
 }
 /* --------------- базовые настройки ---------*/
