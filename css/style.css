@@ -197,7 +197,7 @@ header a{
 	}
 /*catalog styles*/
 .catalog{
-margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 	.catalog h1{
 		font-size: 1.4156em;
@@ -210,14 +210,21 @@ margin-bottom: 50px;
 		margin-top: 40px;
 		display: flex;
 		justify-content: space-between;
+		align-items: stretch;
 	}
 		.block-catalog article{
+			display: flex;
+			flex-direction: column;
 			width: 23%;
 		}
 		.block-catalog img{
 			max-width: 100%;
 		}
 		.catalog-content{
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			justify-content: space-between;
 			padding: 20px;
 			border: 1px solid #eee;
 		}
@@ -232,12 +239,37 @@ margin-bottom: 50px;
 				font-style: italic;
 			}
 			.catalog-content p{
-				font-size: 10px;
+				font-size: 0.625em;
+				text-align: justify;
 			}
 			.price-basket{
 				margin-top: 14px;
 				border-top: 1px solid #eee;
 				display: flex;
 				justify-content: space-between;
-				padding-top: 15px;
+				padding-top: 12px;
 			}
+			.price-basket>span{
+				color: #f45a40;
+				font-size: 14px;
+			}
+/*About styles*/
+.about{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+	.about article{
+		width: 60%;
+	}
+		.about h2{
+
+		}
+		.about p{
+			font-family: 'Roboto Italic', sans-serif;
+			font-size: 14px;
+			font-style: italic;
+		}
+	.about map{
+		width: 35%;
+	}
