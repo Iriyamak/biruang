@@ -53,19 +53,8 @@ html {
 		color: #f45a40;
 		text-decoration: none;
 	}
-	h1, h2, h3, h4, h5, h6 {
-		font-weight: normal;
-	}
 	img {
 		max-width:100%;
-	}
-	.clr {
-		clear: both;
-	}
-	.clearfix:after {
-	    clear: both;
-	    content: "";
-	    display: table;
 	}
 	.centerfix{
 		max-width: 1170px;
@@ -76,7 +65,7 @@ header a{
 	text-transform: uppercase;
 }
 	.header-top{
-		padding: 47px 0 25px 0;
+		padding: 27px 0 25px 0;
 		border-bottom: 1px solid #eee;
 		display:flex;
 		justify-content: space-between;
@@ -84,9 +73,12 @@ header a{
 		.logo{
 			font-size: 1.375em;
 			font-family: 'Roboto Condensed', sans-serif;
-				}
+			letter-spacing: .3px;
+		}
 		.contact-basket{
 			display: flex;
+			padding-top: 7px;
+			letter-spacing: 1px;
 		}
 			.contact-basket p{
 				font-size: 0.75em;
@@ -98,15 +90,15 @@ header a{
 			}
 				.header-basket{
 					border: 1px solid #eee;
-					padding: 8px 18px;
+					padding: 8px 20px;
 					margin-left: 25px;
-					margin-top: -9px; /*чтобы выровнять в строку*/
+					margin-top: -8px; /*чтобы выровнять в строку*/
 				}
 					.header-basket a{
 						margin-left: 33px;
 					}
 	.header-bottom{
-		padding: 15px 8px;
+		padding: 10px 0;
 		display: flex;
 	}
 		.menu{
@@ -118,28 +110,29 @@ header a{
 			}
 		.search-block{
 			display: flex;
-			margin-top: -1px;
+			margin-top: -2px;
+			margin-left: 3px;
 		}
 			.search-block input[type=search]{
 				font-size: 0.875em;
 				border: none;
 				color: #7e7f84;
+				letter-spacing: -.4px;
 			}
 			.search-block input[type=image]{
 				margin-top: 2px;
-				margin-right: 6px;
+				margin-right: 4px;
 			}
 /*slider styles*/
-.slider{
-}
+.slider{}
 	.slider ul li{
 		position: relative;
 		color: #f45a40;
 	}
 		.slider ul li h2{
 			position: absolute;
-			top: 220px;
-			left: 40px;
+			top: 205px;
+			left: 31px;
 			font-weight: bold;
 			font-size: 3.706em;
 			text-transform: uppercase;
@@ -147,8 +140,8 @@ header a{
 		}
 		.slider ul li p{
 			position: absolute;
-			top: 350px;
-			left: 40px;
+			top: 340px;
+			left: 31px;
 			font-size: 0.875em;
 			font-weight: bold;
 		}
@@ -165,7 +158,7 @@ header a{
 }
 	.block-news article{
 		width: 31.6%;
-		margin: 50px 0 60px 0;
+		margin: 33px 0 52px 0;
 	}
 	.block-news img{
 		display: block;
@@ -175,7 +168,7 @@ header a{
 	.block-news h2{
 		font-size: 1.375em;
 		font-family: 'Roboto Condensed', sans-serif;
-		margin: 25px 0;
+		margin: 20px 0 15px 0;
 	}
 		.block-news h2 a{
 			text-transform: uppercase;
@@ -186,10 +179,11 @@ header a{
 			}
 	.block-news p{
 		font-size: 0.875em;
+		padding-bottom: 3px;
 	}
 /*catalog styles*/
 .catalog{
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
 	.catalog h1{
 		font-size: 1.4156em;
@@ -199,7 +193,7 @@ header a{
 		color: #67686d;
 	}
 	.block-catalog{
-		margin-top: 40px;
+		margin-top: 36px;
 		display: flex;
 		justify-content: space-between;
 		align-items: stretch;
@@ -211,13 +205,15 @@ header a{
 		}
 		.block-catalog img{
 			max-width: 100%;
+			display: block;
+			margin: 0 auto;
 		}
 		.catalog-content{
 			display: flex;
 			flex-direction: column;
 			flex: 1;
 			justify-content: space-between;
-			padding: 20px;
+			padding: 19px;
 			border: 1px solid #eee;
 		}
 			.catalog-content h2{
@@ -225,7 +221,7 @@ header a{
 				text-transform: uppercase;
 			}
 			.catalog-content h3{
-				margin: 10px 0;
+				margin: 3px 0 6px 0;
 				font-size: 14px;
 				text-transform: uppercase;
 				font-style: italic;
@@ -233,6 +229,7 @@ header a{
 			.catalog-content p{
 				font-size: 0.625em;
 				text-align: justify;
+				padding-bottom: 1px;
 			}
 			.price-basket{
 				margin-top: 14px;
@@ -249,7 +246,7 @@ header a{
 .about{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 60px;
+	margin-bottom: 49px;
 }
 	.about article{
 		width: 60%;
@@ -257,19 +254,18 @@ header a{
 		.about article h2{
 			font-size: 1.325em;
 			font-weight: bold;
-			margin-bottom: 40px;
+			margin-bottom: 38px;
 			color: #67686d;
 		}
 		.about article p{
 			font-family: 'Roboto Italic', sans-serif;
 			font-size: 0.875em;
 			font-style: italic;
-			margin-bottom: 30px;
+			margin-bottom: 28px;
 			text-align: justify;
 		}
 	.map{
 		width: 35%;
-		padding-top:40px;
 	}
 		.map-adaptive{/* метод для размещения любого контента адаптивною Св-ва для родителя*/
 			position: relative;
@@ -291,7 +287,7 @@ header a{
 		.subscribe .centerfix{
 			display: flex;
 			justify-content: space-between;
-			padding: 30px 0;
+			padding: 33px 0 30px 0;
 		}
 			.subscribe h2{
 				text-transform: uppercase;
@@ -301,7 +297,7 @@ header a{
 			}
 			.subscribe-form input[type="email"]{
 				font-size: 0.875em;
-				padding: 10px 15px;
+				padding: 10px 33px;
 				border: none;
 				text-transform: uppercase;
 			}
@@ -318,23 +314,27 @@ header a{
 /*Footer styles*/
 footer{
 	background-color: #2a2d34;
-	padding: 1px 0 20px 0;
+	padding: 4px 0 62px 0;
 }
 		footer article h2{
 			color:#fff;
 			text-transform: uppercase;
 			font-family: 'Roboto Condensed', sans-serif;
 			font-size: 1.325em;
-			margin-bottom: 20px;
+			margin-bottom: 18px;
 		}
 			.ftr-content p{
 				font-family: 'Roboto Medium', sans-serif;
 				font-size: 0.875em;
-				margin-bottom: 10px;
+				margin-bottom: 30px;
 			}
 			.ftr-content h3{
 				font-size: 0.875em;
 				margin-bottom: 5px;
+				margin-top: -5px;
+			}
+			.ftr-content h3:first-child{
+				margin-top: 0;
 			}
 				.ftr-content h3 a{
 					color: #fff;
@@ -360,11 +360,147 @@ footer{
 						font-size: 0.75em;
 						font-family: 'Roboto Regular', sans-serif;
 						text-transform: uppercase;
-						margin-bottom: 15px;
+						margin-bottom: 12px;
+						margin-top: 3px;
+					}
+					.ftr-content textarea{
+						margin-top: 8px;
+						padding: 12px 20px 15px 20px;
 					}
 					.ftr-content input[type="submit"]{
 						background-color:#f45a40;
 						width: auto;
 						color: #fff;
 						cursor: pointer;
+						padding: 10px 25px;
 					}
+
+@media screen and (max-width:900px) {
+	.slider ul li h2{
+		top: 150px;
+		font-size: 2.5em;
+	}
+	.slider ul li p{
+		top: 250px;
+	}
+	.block-catalog{
+		flex-wrap: wrap;
+	justify-content: space-around;
+	}
+	.block-catalog article{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	.subscribe .centerfix{
+		flex-direction: column;
+		align-items: center;
+	}
+	.subscribe h2{
+		padding-bottom: 20px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:780px) {
+	.slider ul li h2{
+		top: 140px;
+		font-size: 1.5em;
+	}
+	.slider ul li p{
+		top: 220px;
+		font-size: 0.7em;
+	}
+	.header-bottom{
+		flex-direction: column;
+	}
+	.search-block{
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		margin-top: 10px;
+		align-self: center;
+		padding: 5px 0 7px 0;
+	}
+}
+
+@media screen and (max-width:640px) {
+	.block-news{
+		flex-direction: column;
+	}
+	.block-news article{
+		width: 95%;
+		margin: 10px 2.5%;
+	}
+	.catalog{
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+	.about{
+		flex-direction: column;
+	}
+	.about article,
+	.about .map{
+		width: 95%;
+		margin: 10px 2.5%;
+	}
+}
+
+@media screen and (max-width:580px) {
+	.header-top{
+		flex-direction: column;
+		align-items: center;
+		padding: 15px 0;
+	}
+	.header-top .logo{
+		padding-bottom: 10px;
+	}
+	.menu{
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+		.menu li{
+			margin-right: 10px;
+		}
+	.slider ul li h2{
+		top: 50px;
+		font-size: 1.5em;
+	}
+	.slider ul li p{
+		top: 115px;
+		font-size: 0.6em;
+	}
+	.block-catalog{
+		flex-direction: column;
+	}
+	.block-catalog article{
+		width: 95%;
+		margin: 10px 2.5%;
+	}
+
+@media screen and (max-width:410px) {
+		.menu{
+			justify-content: flex-start;
+		}
+		.contact-basket{
+			letter-spacing: 0;
+		}
+				.header-basket{
+					padding: 8px 8px;
+					margin-left: 10px;
+				}
+					.header-basket a{
+						margin-left: 5px;
+					}
+					.slider ul li h2{
+						top: 20px;
+						font-size: 1em;
+					}
+					.slider ul li p{
+						top: 115px;
+						font-size: 0.5em;
+					}
+	.subscribe-form input[type="email"],
+	.subscribe-form input[type="submit"]{
+		width: 95%;
+		box-sizing: border-box;
+		margin: 5px 2.5%;	}
+}
